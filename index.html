@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrainStation Hackathon</title>
 </head>
+
 <body>
-    <h1>Hey</h1>
+    <form action="" method="" id="searchForm">
+        <label for="searchQuery">Search by Hex Value: #</label>
+        <input type="text" name="searchQuery" id="searchQuery">
+
+        <!-- <label for="searchCategory">Select searchCategory</label>
+        <select name="searchCategory" id="searchCategory">
+            <option value="placeholder">placeholder</option>
+        </select> -->
+
+        <button type="submit">Search</button>
+    </form>
     <div class="display_data"></div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="scripts/index.js"></script>
+
 </html>
