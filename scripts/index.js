@@ -52,8 +52,6 @@ function getImages() {
 
 popArray();
 
-getImages();
-
 const formEl = document.getElementById('searchForm');
 
 formEl.addEventListener('submit', (e) => {
