@@ -4,22 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>BrainStation Hackathon</title>
 </head>
+<header>
+    <nav class="search-bar">
+        <a href="index.html">
+            <h2 class="search-bar__title">Art Inspiration</h2>
+        </a>
+        <form action="" method="" id="searchForm">
+            <label for="searchQuery" class="search-bar__label">Search by Color Hue:</label>
+            <select name="searchQuery" id="searchQuery" class="search-bar__select">
+                <option value="">--Select--</option>
+                <option value="Red">Red</option>
+                <option value="Orange">Orange</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Violet">Violet</option>
+                <option value="Brown">Brown</option>
+                <option value="Grey">Grey</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+            </select>
+            <button type="submit" class="search-bar__button">Find Images</button>
+        </form>
+    </nav>
+</header>
 
 <body>
-    <form action="" method="" id="searchForm">
-        <label for="searchQuery">Search by Hex Value: #</label>
-        <input type="text" name="searchQuery" id="searchQuery">
-
-        <!-- <label for="searchCategory">Select searchCategory</label>
-        <select name="searchCategory" id="searchCategory">
-            <option value="placeholder">placeholder</option>
-        </select> -->
-
-        <button type="submit">Search</button>
-    </form>
-    <div class="display_data"></div>
+    <div class="about">
+        <p>Curated images from the Harvard Art Museums collection. Filter by colour to gather inspiration!</p>
+    </div>
+    <div class="display-data"></div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="scripts/index.js"></script>

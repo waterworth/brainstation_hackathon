@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-DemiIt.woff2") format("woff2"), url("../assets/fonts/AvenirNextLTPro-DemiIt.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-Demi.woff2") format("woff2"), url("../assets/fonts/AvenirNextLTPro-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-BoldIt.woff2") format("woff2"), url("../assets/fonts/AvenirNextLTPro-BoldIt.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../assets/fonts/AvenirNextLTPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../assets/fonts/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-It.woff2") format("woff2"), url("../assets/fonts/AvenirNextLTPro-It.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "AvenirNext LT Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+select {
+  font-family: "AvenirNext LT Pro", sans-serif;
+  width: 8rem;
+  margin-right: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  color: black;
+}
+a:-moz-any-link {
+  color: black;
+}
+a:any-link {
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+
+.search-bar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  margin: 0;
+}
+.search-bar__title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.search-bar__label {
+  margin-right: 2rem;
+}
+.search-bar__button {
+  font-family: "AvenirNext LT Pro", sans-serif;
+}
+.search-bar__button:hover {
+  cursor: pointer;
+}
+
+.about {
+  background-color: #e7e7e7;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  padding: 2rem 0;
+}
+.display-data__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 28%;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 8px 10px #888888;
+          box-shadow: 5px 8px 10px #888888;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.display-data__link {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.display-data__img {
+  width: 26vw;
+  margin-bottom: 1.5rem;
+}
+.display-data__title {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.display-data__artist {
+  font-size: 0.7rem;
+  font-style: italic;
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */

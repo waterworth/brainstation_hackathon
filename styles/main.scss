@@ -1,0 +1,119 @@
+// PARTIALS
+@use './partials/typography' as *;
+
+// GLOBAL STYLES
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'AvenirNext LT Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+select {
+    font-family: 'AvenirNext LT Pro', sans-serif;
+    width: 8rem;
+    margin-right: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+
+    &:any-link {
+        color: black;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// NAV-SEARCH
+.search-bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    margin: 0;
+
+    &__title {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    &__label {
+        margin-right: 2rem;
+    }
+
+    &__button {
+        font-family: 'AvenirNext LT Pro', sans-serif;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+// ABOUT
+.about {
+    background-color: rgb(231, 231, 231);
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// SEARCH RESULTS
+.display-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2rem 0;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 28%;
+        height: auto;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 5px 8px 10px #888888;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__link {
+        align-self: center;
+    }
+
+    &__img {
+        width: 26vw;
+        margin-bottom: 1.5rem;
+    }
+
+    &__title {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__artist {
+        font-size: 0.7rem;
+        font-style: italic;
+        margin: 0;
+    }
+}
+
