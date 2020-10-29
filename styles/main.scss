@@ -17,6 +17,7 @@ body {
   font-family: 'AvenirNext LT Pro', sans-serif;
   padding: 0;
   margin: 0;
+  background-color: #fafafa;
 }
 
 select {
@@ -50,6 +51,10 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+    height: 12vh;
+  }
 }
 .search-bar {
   position: sticky;
@@ -59,7 +64,7 @@ header {
   align-items: center;
   width: 100%;
   height: 3.5rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 1);
   padding: 1rem;
   margin: 0;
   @media screen and (max-width: 768px) {
@@ -95,12 +100,46 @@ header {
 
 // ABOUT
 .about {
+  background: repeating-linear-gradient(
+    -45deg,
+    #efefef 0 2px,
+    transparent 0 9px
+  );
   background-color: rgb(231, 231, 231);
   margin-top: 3.6rem;
-  height: 20rem;
+  height: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &__text {
+    text-align: center;
+    width: 100vw;
+    @media screen and (max-width: 778px) {
+      width: 75vw;
+      line-height: 2rem;
+    }
+    @media screen and (max-width: 320px) {
+      line-height: 1.5rem;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    text-decoration-color: #885388;
+    text-decoration-thickness: 0.3rem;
+    text-underline-offset: 0.5rem;
+
+    @media screen and (max-width: 320px) {
+      text-decoration-thickness: 0.2rem;
+      text-underline-offset: 0.15rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+    margin-top: 10vh;
+  }
 }
 
 // SEARCH RESULTS

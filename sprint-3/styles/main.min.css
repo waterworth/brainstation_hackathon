@@ -54,6 +54,7 @@ body {
   font-family: "AvenirNext LT Pro", sans-serif;
   padding: 0;
   margin: 0;
+  background-color: #fafafa;
 }
 
 select {
@@ -98,6 +99,12 @@ header {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    width: 100vw;
+    height: 12vh;
+  }
+}
 .search-bar {
   position: -webkit-sticky;
   position: sticky;
@@ -113,7 +120,7 @@ header {
   align-items: center;
   width: 100%;
   height: 3.5rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
   padding: 1rem;
   margin: 0;
 }
@@ -155,9 +162,10 @@ header {
 }
 
 .about {
+  background: repeating-linear-gradient(-45deg, #efefef 0 2px, transparent 0 9px);
   background-color: #e7e7e7;
   margin-top: 3.6rem;
-  height: 20rem;
+  height: 12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,6 +177,42 @@ header {
   align-items: center;
 }
 
+.about__text {
+  text-align: center;
+  width: 100vw;
+}
+
+@media screen and (max-width: 778px) {
+  .about__text {
+    width: 75vw;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .about__text {
+    line-height: 1.5rem;
+  }
+}
+.about__link {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #885388;
+  text-decoration-color: #885388;
+  text-decoration-thickness: 0.3rem;
+  text-underline-offset: 0.5rem;
+}
+
+@media screen and (max-width: 320px) {
+  .about__link {
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.15rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    width: 100vw;
+    margin-top: 10vh;
+  }
+}
 .display-data {
   display: -webkit-box;
   display: -ms-flexbox;
